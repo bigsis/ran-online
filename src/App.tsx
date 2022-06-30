@@ -1,23 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import Wrapper from './Wrapper';
+
 
 function App() {
+
   return (
     <div className="App">
+        <div className="top-bar">
+            <div className="top-bar-left">
+                <ul className="menu">
+                    <li className="menu-text">Blog</li>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>
+            </div>
+        </div>
+        <Wrapper/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <h1>RanOnline</h1>
       </header>
     </div>
   );
