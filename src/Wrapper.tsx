@@ -9,6 +9,7 @@ class Wrapper extends React.Component<ComponentClass, any>{
         this.state = {val: "hello"}
     }
 
+
     changeValue = () => {
         this.setState(
             {val: "Earth"}
